@@ -1,0 +1,20 @@
+body {
+    background: url("../images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.jumbotron {
+    background-color: #dee9f3;
+}
+
+.thumbnail {
+    background-color: #dee9f3;
+}
