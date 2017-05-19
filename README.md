@@ -2,8 +2,9 @@
 
 ## Projects
 
+- [Zombie Invaders](https://github.com/t73liu/zombie-invaders)
 - [Block Breaker](https://github.com/t73liu/block-breaker)
-- [Calculator](https://github.com/t73liu/calculator)
+- [Calculator - In-Progress](https://github.com/t73liu/calculator)
 
 ## License
 
