@@ -1,10 +1,8 @@
 # [Portfolio](https://t73liu.github.io/)
 
-## Projects
+## Features
 
-- [Zombie Invaders](https://github.com/t73liu/zombie-invaders)
-- [Block Breaker](https://github.com/t73liu/block-breaker)
-- [Calculator - In-Progress](https://github.com/t73liu/calculator)
+This is a static one-page portfolio site with links to my other projects.
 
 ## License
 

@@ -1,185 +1,425 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>About Me</title>
+
+    <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-</head>
-<body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="css/color/blue.css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+    <!-- Modernizer js -->
+    <script src="js/modernizr.custom.js"></script>
+
+</head>
+
+<body class="index">
+
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand">Tao Liu</a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-info"
-                    aria-expanded="false">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Tao Liu</a>
         </div>
-        <div class="collapse navbar-collapse" id="nav-info">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="https://www.linkedin.com/in/t73liu/">
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        LinkedIn
-                    </a>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a href="https://github.com/t73liu">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                        GitHub
-                    </a>
+                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#interests">Interests</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<div class="container">
-    <div class="jumbotron">
-        <h1>Hello</h1>
-        <p>Here are some of my interactive GitHub projects.</p>
+
+<section id="page-top">
+    <div id="main-slide" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slide" data-slide-to="1"></li>
+            <!--<li data-target="#main-slide" data-slide-to="2"></li>-->
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <img class="img-responsive" src="images/header-bg-1.jpg" alt="slider">
+                <div class="slider-content">
+                    <div class="col-md-12 text-center">
+                        <h1 class="animated3">
+                            <span><strong>Welcome</strong></span>
+                        </h1>
+                        <p class="animated2">Looking for interesting challenges</p>
+                        <a href="https://ca.linkedin.com/in/t73liu" class="page-scroll btn btn-primary animated1">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img class="img-responsive" src="images/galaxy.jpg" alt="slider">
+                <div class="slider-content">
+                    <div class="col-md-12 text-center">
+                        <h1 class="animated2">
+                            <span>Constant <strong>Learning</strong></span>
+                        </h1>
+                        <p class="animated1">Excited for new projects</p>
+                        <a class="animated3 slider btn btn-primary btn-min-block" href="https://www.hackerrank.com/t73liu">HackerRank</a>
+                        <a class="animated3 slider btn btn-default btn-min-block" href="https://github.com/t73liu">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#main-slide" data-slide="prev">
+            <span><i class="fa fa-angle-left"></i></span>
+        </a>
+        <a class="right carousel-control" href="#main-slide" data-slide="next">
+            <span><i class="fa fa-angle-right"></i></span>
+        </a>
     </div>
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="thumbnail">
-                <img src="images/in-progress.png" alt="Unable to load images"
-                     class="img-rounded img-thumbnail img-responsive">
-                <div class="caption">
-                    <h3>Crypto-Currency Bot</h3>
-                    <p>Trading Bot made using Spring and Java.</p>
-                    <p>
-                        <a href="https://t73liu.github.io/" class="btn btn-success disabled"
-                           role="button">
-                            Preview
-                        </a>
-                        <a href="https://github.com/t73liu/crypto-trading" class="btn btn-info"
-                           role="button">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                            Source Code
-                        </a>
-                    </p>
+</section>
+
+<section id="portfolio" class="about-us-section-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h3>Portfolio</h3>
+                    <p>A few of my projects</p>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6">
-            <div class="thumbnail">
-                <img src="images/in-progress.png" alt="Unable to load images"
-                     class="img-rounded img-thumbnail img-responsive">
-                <div class="caption">
-                    <h3>Calculator</h3>
-                    <p>Basic Android Calculator made using Kotlin.</p>
-                    <p>
-                        <a href="https://t73liu.github.io/" class="btn btn-success disabled"
-                           role="button">
-                            Preview
-                        </a>
-                        <a href="https://github.com/t73liu/android-calculator" class="btn btn-info"
-                           role="button">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                            Source Code
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="thumbnail">
-                <img src="images/zombie-invaders.png" alt="Unable to load images"
-                     class="img-rounded img-thumbnail img-responsive">
-                <div class="caption">
-                    <h3>Zombie Invaders</h3>
-                    <p>Space Invaders inspired shooter made using Unity and C#.</p>
-                    <p>
-                        <a href="https://t73liu.github.io/zombie-invaders" class="btn btn-success" role="button">
-                            Play
-                        </a>
-                        <a href="https://github.com/t73liu/zombie-invaders" class="btn btn-info" role="button">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                            Source Code
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="thumbnail">
-                <img src="images/block-breaker.png" alt="Unable to load images"
-                     class="img-rounded img-thumbnail img-responsive">
-                <div class="caption">
-                    <h3>The Wall</h3>
-                    <p>Breakout clone made using Unity and C#.</p>
-                    <p>
-                        <a href="https://t73liu.github.io/the-wall" class="btn btn-success" role="button">
-                            Play
-                        </a>
-                        <a href="https://github.com/t73liu/the-wall" class="btn btn-info" role="button">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                            Source Code
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="thumbnail">
-                <img src="images/in-progress.png" alt="Unable to load images"
-                     class="img-rounded img-thumbnail img-responsive">
-                <div class="caption">
-                    <h3>Escape From Corporate</h3>
-                    <p>Flappy Bird inspired side-scroller made using Unity and C#.</p>
-                    <p>
-                        <a href="https://t73liu.github.io/" class="btn btn-success disabled"
-                           role="button">
-                            Play
-                        </a>
-                        <a href="https://github.com/t73liu/" class="btn btn-info disabled"
-                           role="button">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                            Source Code
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="thumbnail">
-                <img src="images/in-progress.png" alt="Unable to load images"
-                     class="img-rounded img-thumbnail img-responsive">
-                <div class="caption">
-                    <h3>Groupie Defense</h3>
-                    <p>Tower Defense game where player is a bodyguard made using Unity and C#.</p>
-                    <p>
-                        <a href="https://t73liu.github.io/" class="btn btn-success disabled"
-                           role="button">
-                            Play
-                        </a>
-                        <a href="https://github.com/t73liu/" class="btn btn-info disabled"
-                           role="button">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                            Source Code
-                        </a>
-                    </p>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <ul id="portfolio-list">
+                    <li>
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/in-progress.png" class="img-responsive img-thumbnail" alt=""/>
+                            <div class="portfolio-caption">
+                                <h4>Trading Bot</h4>
+                                <a href="https://github.com/t73liu/trading-bot" class="link-3"><i
+                                        class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/in-progress.png" class="img-responsive img-thumbnail" alt=""/>
+                            <div class="portfolio-caption">
+                                <h4>Crypto-Portfolio</h4>
+                                <a href="https://github.com/t73liu/crypto-portfolio" class="link-3"><i
+                                        class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/in-progress.png" class="img-responsive img-thumbnail" alt=""/>
+                            <div class="portfolio-caption">
+                                <h4>Spark Kaggle</h4>
+                                <a href="https://github.com/t73liu/spark-machine-learning" class="link-3"><i
+                                        class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/zombie-invaders.png" class="img-responsive img-thumbnail"
+                                 alt=""/>
+                            <div class="portfolio-caption">
+                                <h4>Zombie Invaders</h4>
+                                <a href="https://github.com/t73liu/zombie-invaders" class="link-1"><i
+                                        class="fa fa-github"></i></a>
+                                <a href="https://t73liu.github.io/zombie-invaders/" class="link-2"><i
+                                        class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/block-breaker.png" class="img-responsive img-thumbnail" alt=""/>
+                            <div class="portfolio-caption">
+                                <h4>The Wall</h4>
+                                <a href="https://github.com/t73liu/the-wall" class="link-1"><i class="fa fa-github"></i></a>
+                                <a href="https://t73liu.github.io/the-wall/" class="link-2"><i
+                                        class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portfolio-item">
+                            <img src="images/portfolio/in-progress.png" class="img-responsive img-thumbnail" alt=""/>
+                            <div class="portfolio-caption">
+                                <h4>Algorithms</h4>
+                                <a href="https://github.com/t73liu/data-structures-algorithms-java" class="link-3"><i
+                                        class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
+</section>
+
+<div id="skills" class="services-section">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="section-title text-center">
+                    <h3>Skills</h3>
+                    <p>Tools and languages</p>
+                </div>
+
+                <div class="skill-shortcode">
+
+                    <div class="skill">
+                        <p>Java 8</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-percentage="85">
+                                <span class="progress-bar-span">85%</span>
+                                <span class="sr-only">85% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>Spring</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-percentage="80">
+                                <span class="progress-bar-span">80%</span>
+                                <span class="sr-only">80% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>Spark</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-percentage="75">
+                                <span class="progress-bar-span">75%</span>
+                                <span class="sr-only">75% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>TypeScript</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-percentage="60">
+                                <span class="progress-bar-span">60%</span>
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>Python</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-percentage="60">
+                                <span class="progress-bar-span">60%</span>
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>React.js</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-percentage="50">
+                                <span class="progress-bar-span">50%</span>
+                                <span class="sr-only">50% Complete</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
-<br>
-<br>
+<section id="interests" class="about-us-section-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <h3>Interests</h3>
+                    <p>Hobbies and activities</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="feature-2">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-gamepad"></i>
+                            <div class="border"></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Gaming</h4>
+                            <p>Enjoying a casual game of DOTA 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="feature-2">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-android"></i>
+                            <div class="border"></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Android Dev</h4>
+                            <p>Making fun side projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="feature-2">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-book"></i>
+                            <div class="border"></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Books</h4>
+                            <p>Learning best practices </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="feature-2">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-money"></i>
+                            <div class="border"></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Trading</h4>
+                            <p>Follow the latest stock news</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="feature-2">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-btc"></i>
+                            <div class="border"></div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Crypto-Currency</h4>
+                            <p>HODL and speculate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <footer class="style-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-social text-center">
+                        <ul>
+                            <li><a href="https://github.com/t73liu/t73liu.github.io"><i class="fa fa-code"></i></a></li>
+                            <li><a href="https://github.com/t73liu/"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://ca.linkedin.com/in/t73liu"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<div id="loader">
+    <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"
+        integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+        crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/count-to.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/script.js"></script>
 
 </body>
+
 </html>
