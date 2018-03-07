@@ -1030,7 +1030,6 @@ and (min-width : 551px){
 	left: 40%;
 }
 
-
 /*---------------------------------------------------------*/
 /* Start About Us Section                                  */
 /*---------------------------------------------------------*/
@@ -1114,6 +1113,36 @@ and (min-width : 551px){
     width: 100%;
 }
 
+/*---------------------------------------------------------------*/
+/* Start Call To Action
+/*---------------------------------------------------------------*/
+
+
+.call-to-action {
+	background: url(../images/header-back2.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 90%;
+	color: #fff;
+	text-align: center;
+	padding: 80px 0;
+}
+
+.call-to-action h1 {
+	font-weight: 300;
+	line-height: 50px;
+	padding-bottom: 40px;
+	font-size: 30px;
+}
+
+.call-to-action h1 strong {
+	font-weight: 600;
+}
+
+.call-to-action .btn {
+	padding: 20px;
+	font-size: 16px;
+}
 
 /*-------------------------------------------------------*/
 /* Start Footer Section                                  */
