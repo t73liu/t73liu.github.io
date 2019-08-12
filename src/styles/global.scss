@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+$footer-padding: 2rem 1rem;
+$navbar-height: 4rem;
+$title-weight: 700;
+
+@import "~bulma/sass/utilities/all";
+@import "~bulma/sass/base/all";
+@import "~bulma/sass/elements/box";
+@import "~bulma/sass/elements/button";
+@import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/content";
+@import "~bulma/sass/elements/image";
+@import "~bulma/sass/elements/notification";
+@import "~bulma/sass/elements/tag";
+@import "~bulma/sass/elements/title";
+@import "~bulma/sass/grid/all";
+@import "~bulma/sass/layout/all";
+@import "~bulma/sass/components/card";
+@import "~bulma/sass/components/level";
+@import "~bulma/sass/components/media";
+@import "~bulma/sass/components/navbar";
+
+.padded-container {
+  @extend .container;
+  padding: 3rem 1.5rem;
+}
+
+.no-box-shadow {
+  box-shadow: none;
+}
+
+.navbar-brand.container {
+  display: flex;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-header-content {
+  padding-top: $card-content-padding;
+  padding-left: $card-content-padding;
+  padding-right: $card-content-padding;
+}
+
+body {
+  background-color: seashell;
+}
+
+a {
+  color: lightseagreen;
+  &:hover {
+    color: seagreen;
+  }
+}
