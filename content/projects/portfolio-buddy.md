@@ -1,13 +1,12 @@
 ---
-title: "First Project"
-date: "2019-08-12"
+title: "Portfolio Buddy"
+date: "2018-09-19"
 description: "Sample project description here to illustrate usage."
-image: /images/icon.png
-demo: https://t73liu.github.io/gatsby-engineer-starter/
-source: https://github.com/t73liu/gatsby-engineer-starter
+image: ../images/icon.png
+source: https://github.com/t73liu/portfolio
 tags:
-  - javascript
-  - react.js
+  - TypeScript
+  - React Native
 ---
 
 # Summary
