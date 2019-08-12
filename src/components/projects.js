@@ -22,9 +22,7 @@ export default ({ data: { tags, projects }, pageContext: { tag } }) => {
               <div key={index} className="tile is-ancestor">
                 {row.map(node => (
                   <div key={node.id} className="tile is-parent is-4">
-                    <article className="tile is-child">
-                      <ProjectPreview {...node} />
-                    </article>
+                    <ProjectPreview {...node} />
                   </div>
                 ))}
               </div>

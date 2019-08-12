@@ -27,15 +27,9 @@ export default ({ children }) => {
         <footer className="footer is-fixed-bottom">
           <div className="content has-text-centered">
             <p>
-              Gatsby starter by{" "}
-              <ExternalLink url="https://t73liu.github.io">
-                <strong>Tao Liu</strong>
+              <ExternalLink url="https://github.com/t73liu/t73liu.github.io">
+                <strong>Source Code</strong>
               </ExternalLink>
-              . The{" "}
-              <ExternalLink url="https://github.com/t73liu/gatsby-engineer-starter">
-                <strong>source code</strong>
-              </ExternalLink>{" "}
-              is licensed MIT.
             </p>
           </div>
         </footer>

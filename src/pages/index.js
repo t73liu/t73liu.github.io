@@ -31,15 +31,27 @@ export default ({ data: { posts, projects, profileImage } }) => (
                 </ExternalLink>
               </p>
               <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
+                Software engineer looking for interesting problems
                 <ul>
+                  <li>Clojure</li>
+                  <li>Java</li>
                   <li>JavaScript</li>
                   <li>React</li>
-                  <li>GraphQL</li>
                 </ul>
               </div>
             </div>
+            <footer className="card-footer">
+              <div className="card-footer-item">
+                <ExternalLink url="https://www.linkedin.com/in/t73liu">
+                  LinkedIn
+                </ExternalLink>
+              </div>
+              <div className="card-footer-item">
+                <ExternalLink url="https://github.com/t73liu">
+                  GitHub
+                </ExternalLink>
+              </div>
+            </footer>
           </div>
         </div>
         <div className="column">
@@ -58,9 +70,7 @@ export default ({ data: { posts, projects, profileImage } }) => (
             <div className="tile is-ancestor">
               {projects.nodes.map(node => (
                 <div key={node.id} className="tile is-4 is-parent">
-                  <article className="tile is-child">
-                    <ProjectPreview {...node} />
-                  </article>
+                  <ProjectPreview {...node} />
                 </div>
               ))}
             </div>
@@ -108,7 +118,7 @@ export const query = graphql`
           demo
           image {
             childImageSharp {
-              fluid(maxWidth: 500, quality: 100) {
+              fluid(maxWidth: 500, maxHeight: 500, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -122,7 +132,7 @@ export const query = graphql`
     profileImage: file(relativePath: { eq: "images/profile.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
-        fluid {
+        fluid(maxWidth: 500, maxHeight: 500, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

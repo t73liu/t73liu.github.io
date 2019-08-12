@@ -1,23 +1,14 @@
 ---
-title: "Hello World in GatsbyJS"
-date: "2019-08-05"
+title: "Hello World with GatsbyJS"
+date: "2019-08-12"
 tags:
   - GatsbyJS
   - React
 ---
 
-# Summary
-
-## Code
-
-Inline `code`
-
-Indented code
-
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
+GatsbyJS is a static site generator that makes it easy to build performant sites.
+It uses React to render components and GraphQL to query site content at build time.
+GatsbyJS builds ...
 
 Block code "fences"
 
@@ -35,22 +26,8 @@ var foo = function(bar) {
 console.log(foo(5));
 ```
 
-## Tables
+### References
 
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
-
-Right aligned columns
-
-| Option |                                                               Description |
-| -----: | ------------------------------------------------------------------------: |
-|   data | path to data files to supply the data that will be passed into templates. |
-| engine |    engine to be used for processing templates. Handlebars is the default. |
-|    ext |                                      extension to be used for dest files. |
-
-## Links
-
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+- [GatsbyJS](https://www.gatsbyjs.org/)
+- [React](https://reactjs.org/)
+- [GraphQL](https://graphql.org/)

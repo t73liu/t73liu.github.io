@@ -1,8 +1,8 @@
 ---
 title: "Portfolio Buddy"
 date: "2018-09-19"
-description: "Sample project description here to illustrate usage."
-image: ../images/icon.png
+description: "Stock tracking mobile app built using React Native"
+image: ../images/portfolio-buddy.jpg
 source: https://github.com/t73liu/portfolio
 tags:
   - TypeScript

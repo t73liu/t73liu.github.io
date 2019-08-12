@@ -7,7 +7,7 @@ export default ({
   fields: { slug },
   frontmatter: { title, description, source, demo, image },
 }) => (
-  <div className="card">
+  <div className="tile is-child card">
     {image && (
       <div className="card-image">
         <Link to={slug}>
@@ -27,12 +27,12 @@ export default ({
     </div>
     <footer className="card-footer">
       {source && (
-        <div className="card-footer-item no-border">
+        <div className="card-footer-item">
           <ExternalLink url={source}>Code</ExternalLink>
         </div>
       )}
       {demo && (
-        <div className="card-footer-item no-border">
+        <div className="card-footer-item">
           <ExternalLink url={demo}>Demo</ExternalLink>
         </div>
       )}

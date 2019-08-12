@@ -1,8 +1,8 @@
 ---
-title: "Gatsby Starter"
+title: "GatsbyJS Starter"
 date: "2019-08-11"
-description: "Sample project description here to illustrate usage."
-image: ../images/icon.png
+description: "Personal blog and projects template built using React and GatsbyJS"
+image: ../images/gatsby-starter.png
 demo: https://t73liu.github.io/gatsby-engineer-starter/
 source: https://github.com/t73liu/gatsby-engineer-starter
 tags:

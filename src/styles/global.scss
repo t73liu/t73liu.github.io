@@ -38,6 +38,12 @@ $title-weight: 700;
   border-radius: 10px;
 }
 
+.tile.is-child.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .card-header-content {
   padding-top: $card-content-padding;
   padding-left: $card-content-padding;
