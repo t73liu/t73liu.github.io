@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import SEO from "../components/seo";
+import ExternalLink from "../components/external-link";
 import BlogPreview from "../components/blog-preview";
 import ProjectPreview from "../components/project-preview";
 
@@ -23,8 +24,12 @@ export default ({ data: { posts, projects, profileImage } }) => (
               <Img fluid={profileImage.childImageSharp.fluid} alt="Profile" />
             </div>
             <div className="card-content">
-              <p className="title is-4">John Smith</p>
-              <p className="subtitle is-6">@johnsmith</p>
+              <p className="title is-4">Tao Liu</p>
+              <p className="subtitle is-6">
+                <ExternalLink url="https://github.com/t73liu">
+                  @t73liu
+                </ExternalLink>
+              </p>
               <div className="content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Phasellus nec iaculis mauris.
@@ -114,7 +119,7 @@ export const query = graphql`
         }
       }
     }
-    profileImage: file(relativePath: { eq: "images/profile.png" }) {
+    profileImage: file(relativePath: { eq: "images/profile.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         fluid {

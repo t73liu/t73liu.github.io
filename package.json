@@ -9,8 +9,7 @@
     "deploy": "gatsby build && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "format": "prettier --write **/*.{js,jsx,scss,md,json}",
-    "preview": "gatsby clean && gatsby build && gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "preview": "gatsby clean && gatsby build && gatsby serve"
   },
   "dependencies": {
     "bulma": "^0.7.5",

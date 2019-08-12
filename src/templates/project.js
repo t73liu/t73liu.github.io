@@ -17,20 +17,22 @@ export default ({ data }) => {
       </section>
       <div className="padded-container">
         {(demo || source) && (
-          <nav className="level box">
+          <nav className="level">
             {source && (
-              <p className="level-item has-text-centered">
-                <ExternalLink url={source}>
-                  <strong>Code</strong>
-                </ExternalLink>
-              </p>
+              <ExternalLink
+                url={source}
+                className="button level-item has-text-centered"
+              >
+                <strong>Code</strong>
+              </ExternalLink>
             )}
             {demo && (
-              <p className="level-item has-text-centered">
-                <ExternalLink url={demo}>
-                  <strong>Demo</strong>
-                </ExternalLink>
-              </p>
+              <ExternalLink
+                url={demo}
+                className="button level-item has-text-centered"
+              >
+                <strong>Demo</strong>
+              </ExternalLink>
             )}
           </nav>
         )}

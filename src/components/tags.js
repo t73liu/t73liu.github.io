@@ -13,7 +13,7 @@ export default ({ baseUrl = "", tags, tag }) => (
         {tags.group.map(({ fieldValue, totalCount }) => (
           <span
             key={fieldValue}
-            className={fieldValue === tag ? "tag has-text-weight-bold" : "tag"}
+            className={fieldValue === tag ? "tag is-dark" : "tag"}
           >
             <Link
               to={

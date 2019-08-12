@@ -8,11 +8,13 @@ export default ({
   frontmatter: { title, description, source, demo, image },
 }) => (
   <div className="card">
-    <div className="card-image">
-      <Link to={slug}>
-        <Img fluid={image.childImageSharp.fluid} alt={title} />
-      </Link>
-    </div>
+    {image && (
+      <div className="card-image">
+        <Link to={slug}>
+          <Img fluid={image.childImageSharp.fluid} alt={title} />
+        </Link>
+      </div>
+    )}
     <header className="card-header no-box-shadow">
       <div className="card-header-content">
         <p className="title is-size-3">

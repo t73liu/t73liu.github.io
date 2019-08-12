@@ -1,7 +1,7 @@
 import React from "react";
 
-export default ({ url = "", children }) => (
-  <a href={url} rel="noopener noreferrer" target="_blank">
+export default ({ url = "", children, className }) => (
+  <a href={url} rel="noopener noreferrer" target="_blank" className={className}>
     {children}
   </a>
 );
