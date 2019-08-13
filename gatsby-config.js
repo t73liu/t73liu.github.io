@@ -7,6 +7,9 @@ const { round } = require("lodash");
 
 module.exports = {
   plugins: [
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
+    "gatsby-plugin-catch-links",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -34,7 +37,7 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 800,
+              maxWidth: 1300,
               wrapperStyle: fluidResult =>
                 `flex:${round(fluidResult.aspectRatio, 2)};`,
             },
@@ -58,8 +61,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Gatsby Engineer Starter",
-        short_name: "Gatsby Engineer Starter",
+        name: "Tao",
+        short_name: "Tao",
         start_url: "/",
         background_color: "#CDC449",
         theme_color: "#CDC449",
@@ -74,5 +77,6 @@ module.exports = {
     title: "Tao",
     description: "Personal blog and projects.",
     author: "@t73liu",
+    siteUrl: "https://t73liu.github.io",
   },
 };
