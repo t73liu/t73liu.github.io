@@ -9,11 +9,14 @@ tags:
   - React Native
 ---
 
-# Summary
+## Technologies
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+**React Native** is a UI framework built by Facebook that lets you build Android and iOS apps.
+It uses the same API as React and is written in JavaScript.
+
+**TypeScript** is a superset of JavaScript and being maintained by Microsoft.
+It brings static typing to JavaScript and helps find bugs at compile time.
+
+## Screenshots
+
+![Portfolio Buddy](../images/portfolio-buddy.jpg)

@@ -20,12 +20,15 @@ export default ({ data }) => {
           className="content"
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
         />
-        <div className="hero-foot tags are-large">
-          {tags.map(tag => (
-            <span key={tag} className="tag">
-              <Link to={`/blog/tags/${tag}`}>{tag}</Link>
-            </span>
-          ))}
+        <div className="hero-foot content">
+          <h2>Tags</h2>
+          <div className="tags are-medium">
+            {tags.map(tag => (
+              <span key={tag} className="tag">
+                <Link to={`/blog/tags/${tag}`}>{tag}</Link>
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </Fragment>
