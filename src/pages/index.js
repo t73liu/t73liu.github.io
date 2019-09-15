@@ -26,7 +26,10 @@ export default ({ data: { posts, projects, profileImage } }) => (
             <div className="card-content">
               <p className="title is-4">Tao Liu</p>
               <p className="subtitle is-6">
-                <ExternalLink url="https://github.com/t73liu">
+                <ExternalLink
+                  url="https://github.com/t73liu"
+                  className="has-text-weight-semibold"
+                >
                   @t73liu
                 </ExternalLink>
               </p>
@@ -119,7 +122,7 @@ export const query = graphql`
           image {
             childImageSharp {
               fluid(maxWidth: 500, maxHeight: 500, quality: 100) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -133,7 +136,7 @@ export const query = graphql`
       childImageSharp {
         # Specify the image processing specifications right in the query.
         fluid(maxWidth: 500, maxHeight: 500, quality: 100) {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
