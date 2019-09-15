@@ -55,8 +55,17 @@ body {
 }
 
 a {
-  color: lightseagreen;
+  color: #006100;
   &:hover {
     color: seagreen;
+  }
+}
+
+.tag.is-dark {
+  a {
+    color: white;
+    &:hover {
+      color: palegreen;
+    }
   }
 }
