@@ -81,10 +81,11 @@ This builds the website for production use and creates a gh-pages branch on your
     yarn deploy
 ```
 
-If you the Google Chrome audit again, it will pass with flying colors.
+If you run the Google Chrome audit again, it will pass with flying colors.
 
 ## References
 
+- [Personal GatsbyJS starter](/projects/gatsby-starter/)
 - [GatsbyJS](https://www.gatsbyjs.org/)
 - [React](https://reactjs.org/)
 - [GraphQL](https://graphql.org/)
