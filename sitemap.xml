@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://t73liu.github.io/blog/tags/GatsbyJS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://t73liu.github.io/blog/tags/Machine Learning/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/blog/tags/React/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://t73liu.github.io/blog/tags/React Native/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://t73liu.github.io/blog/tags/TensorFlow.js/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://t73liu.github.io/posts/experimenting-with-tfjs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/posts/hello-world-with-gatsbyjs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/projects/tags/GatsbyJS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/projects/tags/JavaScript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/projects/tags/React/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/projects/tags/React Native/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/projects/tags/TypeScript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://t73liu.github.io/projects/portfolio-buddy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/projects/gatsby-starter/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://t73liu.github.io/projects/portfolio-buddy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://t73liu.github.io/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
