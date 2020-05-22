@@ -18,7 +18,7 @@ export default ({ data: { tags, posts }, pageContext: { tag } }) => {
         <div className="columns">
           <div className="column is-three-quarters">
             <div className="tile is-ancestor is-vertical">
-              {posts.nodes.map(node => (
+              {posts.nodes.map((node) => (
                 <div key={node.id} className="tile is-parent">
                   <article className="tile is-child">
                     <BlogPreview {...node} />

@@ -43,7 +43,7 @@ export default ({ data }) => {
         <div className="hero-foot content">
           <h2>Tags</h2>
           <div className="tags are-medium">
-            {tags.map(tag => (
+            {tags.map((tag) => (
               <span key={tag} className="tag">
                 <Link to={`/projects/tags/${tag}`}>{tag}</Link>
               </span>

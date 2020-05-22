@@ -60,7 +60,7 @@ export default ({ data: { posts, projects, profileImage } }) => (
         <div className="column">
           <div>
             <div className="title">Recent Posts</div>
-            {posts.nodes.map(node => (
+            {posts.nodes.map((node) => (
               <div key={node.id} className="tile is-parent">
                 <article className="tile is-child">
                   <BlogPreview {...node} />
@@ -71,7 +71,7 @@ export default ({ data: { posts, projects, profileImage } }) => (
           <div>
             <p className="title">Recent Projects</p>
             <div className="tile is-ancestor">
-              {projects.nodes.map(node => (
+              {projects.nodes.map((node) => (
                 <div key={node.id} className="tile is-4 is-parent">
                   <ProjectPreview {...node} />
                 </div>

@@ -7,12 +7,14 @@ tags:
 ---
 
 GatsbyJS is a static site generator that creates performant websites by default.
-It uses React to render components and GraphQL to query various data sources at build time.
-There are tons of official and third-party plugins that can be easily plugged into your site to help fetch and transform data.
+It uses React to render components and GraphQL to query various data sources
+at build time. There are tons of official and third-party plugins that can be
+easily plugged into your site to help fetch and transform data.
 
 ## Performance
 
-Google Chrome has a built-in audit tool called Lighthouse that evaluates your site on the following:
+Google Chrome has a built-in audit tool called Lighthouse that evaluates your
+site on the following:
 
 - Performance
   - First meaningful paint: how fast the page loads primary content onto the screen
@@ -48,7 +50,8 @@ Google Chrome has a built-in audit tool called Lighthouse that evaluates your si
 At this point if you run the audit it will not have the same result as above.
 It still needs to be deployed to a static site host first.
 
-We will use GitHub pages to host the starter project so you will need a repository for this project on GitHub.
+We will use GitHub pages to host the starter project so you will need a
+repository for this project on GitHub.
 
 Make the following addition to **gatsby-config.js**:
 
@@ -74,7 +77,8 @@ Add the following script to your **package.json**.
 }
 ```
 
-This builds the website for production use and creates a gh-pages branch on your repository.
+This builds the website for production use and creates a gh-pages branch on your
+repository.
 
 ```bash
     # Project is reachable at https://username.github.io/sample

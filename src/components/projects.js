@@ -20,7 +20,7 @@ export default ({ data: { tags, projects }, pageContext: { tag } }) => {
           <div className="column is-three-quarters">
             {chunk(projects.nodes, 3).map((row, index) => (
               <div key={index} className="tile is-ancestor">
-                {row.map(node => (
+                {row.map((node) => (
                   <div key={node.id} className="tile is-parent is-4">
                     <ProjectPreview {...node} />
                   </div>

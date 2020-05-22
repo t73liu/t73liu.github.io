@@ -38,7 +38,7 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 1300,
-              wrapperStyle: fluidResult =>
+              wrapperStyle: (fluidResult) =>
                 `flex:${round(fluidResult.aspectRatio, 2)};`,
             },
           },

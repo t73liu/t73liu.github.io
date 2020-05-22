@@ -23,7 +23,8 @@ The complete code can be found here: https://github.com/t73liu/tfjs-starter
 
 ## Installation
 
-The easiest way to get started would be installing expo and initializing an empty project.
+The easiest way to get started would be installing expo and initializing an
+empty project.
 
 ```bash
     yarn add global expo-cli
@@ -103,9 +104,11 @@ Now that we can create the component to handle the prediction logic.
 
 1. This component has a loading state since the model needs to be loaded
    and warmed up before it is ready to make predictions.
-1. This component takes a single property (`source`) which refers to a local image and passes it to
-   a TensorFlow.js util function that converts the image to binary data.
-1. Another helper function converts the binary data into tensors (n-dimensional matrix).
+1. This component takes a single property (`source`) which refers to a local
+   image and passes it to a TensorFlow.js util function that converts the image
+   to binary data.
+1. Another helper function converts the binary data into tensors (n-dimensional
+   matrix).
 1. Finally the model uses tensors as inputs and outputs an array of predictions.
 
 ```javascript
@@ -151,7 +154,7 @@ export default class MobileNet extends Component {
 
 The `imageToTensor` helper function is implemented below. It decodes the binary
 data using the `jpeg-js` library into an array of integers and removes
-the alpha channel since MobileNet does not support/use that dimension. 
+the alpha channel since MobileNet does not support/use that dimension.
 
 ```bash
     yarn add jpeg-js
@@ -182,19 +185,21 @@ placeholder text in `App.js` with our MobileNet component. The image that
 was added to `assets` folder earlier will now be processed!
 
 ```javascript
-<MobileNet source={require("./assets/sample.jpg")} />;
+<MobileNet source={require("./assets/sample.jpg")} />
 ```
 
 ## Finishing Touches
 
-Before we wrap up, there are additional things we could do to clean up the application
-to make it more presentable. You can find the source code and demo in the References section.
+Before we wrap up, there are additional things we could do to clean up the
+application to make it more presentable. You can find the source code and demo
+in the References section.
 
 - Add an UI component library to style the application using `react-native-paper`
 - Add image picking functionality using `expo-image-picker`
 - Add image resizing functionality to handle bigger pictures using `expo-image-manipulator`
 
-That's it. It is very easy to add TensorFlow.js to your existing React Native applications.
+That's it. It is very easy to add TensorFlow.js to your existing React Native
+applications.
 
 ## Screenshots
 

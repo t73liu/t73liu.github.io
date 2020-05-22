@@ -48,8 +48,8 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
-    result.data.blogTags.distinct.forEach(tag => {
+  `).then((result) => {
+    result.data.blogTags.distinct.forEach((tag) => {
       createPage({
         path: `/blog/tags/${tag}/`,
         component: path.resolve("./src/templates/blog-tag.js"),
@@ -58,7 +58,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       });
     });
-    result.data.posts.nodes.forEach(node => {
+    result.data.posts.nodes.forEach((node) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve("./src/templates/blog-post.js"),
@@ -67,7 +67,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       });
     });
-    result.data.projectTags.distinct.forEach(tag => {
+    result.data.projectTags.distinct.forEach((tag) => {
       createPage({
         path: `/projects/tags/${tag}/`,
         component: path.resolve("./src/templates/project-tag.js"),
@@ -76,7 +76,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       });
     });
-    result.data.projects.nodes.forEach(node => {
+    result.data.projects.nodes.forEach((node) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve("./src/templates/project.js"),
