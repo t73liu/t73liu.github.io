@@ -1,6 +1,6 @@
 ---
 title: "PoE Arbitrage"
-date: "2020-05-26"
+date: "2020-05-27"
 description: "Go CLI for detecting Path of Exile trading opportunities"
 image: ../images/poe-arbitrage.png
 source: https://github.com/t73liu/poe-arbitrage
@@ -20,7 +20,7 @@ which is not officially supported by GGG.
 used for backend services and CLIs (command line interfaces).
 
 **cobra** is a Go package for creating CLI applications. It offers a variety of
-features such as creating subcommands, typo suggestions and automatic help generation.
+features such as creating sub-commands, typo suggestions and automatic help generation.
 
 **viper** is a Go package for configuration management. It supports JSON, TOML,
 YAML, etc. and reading from environment variables.
@@ -31,7 +31,7 @@ YAML, etc. and reading from environment variables.
 - Exclude AFK users by default
 - Ignore users
 - Favorite users
-- Print whispers for profitable arbitrage opportunities
+- WIP: Print whispers for profitable arbitrage opportunities
 
 ## Screenshots
 
