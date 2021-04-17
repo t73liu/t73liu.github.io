@@ -1,0 +1,2 @@
+(self.webpackChunkt73liu_github_io=self.webpackChunkt73liu_github_io||[]).push([[883],{9616:function(e,t,n){"use strict";n.r(t);var a=n(7294),l=n(7198),i=n(3751);t.default=function(){return a.createElement(l.Z,null,a.createElement(i.Z,{title:"Not Found"}),a.createElement("section",{className:"hero is-warning is-bold"},a.createElement("div",{className:"hero-body"},a.createElement("div",{className:"container"},a.createElement("h1",{className:"title"},"Not Found ...")))))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-d387d05a171eafe7b5f7.js.map

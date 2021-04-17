@@ -1,0 +1,2 @@
+(self.webpackChunkt73liu_github_io=self.webpackChunkt73liu_github_io||[]).push([[397],{7268:function(e,t,u){"use strict";u.r(t);var n=u(7294),i=u(7198),l=u(9519);t.default=function(e){return n.createElement(i.Z,null,n.createElement(l.Z,e))}}}]);
+//# sourceMappingURL=component---src-templates-project-tag-js-2b31fad671e62272013f.js.map
