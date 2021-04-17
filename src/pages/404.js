@@ -1,9 +1,10 @@
-import React, { Fragment } from "react";
-import SEO from "../components/seo";
+import React from "react";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
-export default () => (
-  <Fragment>
-    <SEO title="Not Found" />
+const NotFound = () => (
+  <Layout>
+    <Seo title="Not Found" />
     <section className="hero is-warning is-bold">
       <div className="hero-body">
         <div className="container">
@@ -11,5 +12,7 @@ export default () => (
         </div>
       </div>
     </section>
-  </Fragment>
+  </Layout>
 );
+
+export default NotFound;

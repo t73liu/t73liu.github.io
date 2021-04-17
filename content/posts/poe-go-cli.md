@@ -86,9 +86,9 @@ exchange site and looking at the HTML, just right-click and "Inspect Element" on
 of the tradable items.
 
 ```
-<div data-id="alt" title="" class="exchange-filter-item" data-original-title="Orb of Alteration">
-  <img src="https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollMagic.png?v=6d9520174f6643e502da336e76b730d3" alt="Orb of Alteration">
-</div>
+    <div data-id="alt" title="" class="exchange-filter-item" data-original-title="Orb of Alteration">
+      <img src="https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollMagic.png" alt="Orb of Alteration">
+    </div>
 ```
 
 Let's save a few item IDs and names to a JSON file. `viper` is a config management

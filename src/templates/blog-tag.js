@@ -1,7 +1,13 @@
+import React from "react";
 import { graphql } from "gatsby";
 import Blog from "../components/blog";
+import Layout from "../components/layout";
 
-export default Blog;
+const BlogTagPage = (props) => (
+  <Layout>
+    <Blog {...props} />
+  </Layout>
+);
 
 export const query = graphql`
   query($tag: [String]) {
@@ -36,3 +42,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default BlogTagPage;

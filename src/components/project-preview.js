@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import ExternalLink from "./external-link";
-import Img from "gatsby-image";
+import ExternalLink from "./external-link"; // import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
-export default ({
+const ProjectPreview = ({
   fields: { slug },
   frontmatter: { title, description, source, demo, image },
 }) => (
@@ -11,7 +11,10 @@ export default ({
     {image && (
       <div className="card-image">
         <Link to={slug}>
-          <Img fluid={image.childImageSharp.fluid} alt={title} />
+          <GatsbyImage
+            image={image.childImageSharp.gatsbyImageData}
+            alt={title}
+          />
         </Link>
       </div>
     )}
@@ -39,3 +42,5 @@ export default ({
     </footer>
   </div>
 );
+
+export default ProjectPreview;

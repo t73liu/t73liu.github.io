@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
-import SEO from "./seo";
+import Seo from "./seo";
 import BlogPreview from "./blog-preview";
 import Tags from "./tags";
 
-export default ({ data: { tags, posts }, pageContext: { tag } }) => {
+const Blog = ({ data: { tags, posts }, pageContext: { tag } }) => {
   return (
     <Fragment>
-      <SEO title={tag ? `Blog | ${tag}` : "Blog"} />
+      <Seo title={tag ? `Blog | ${tag}` : "Blog"} />
       <section className="hero is-primary is-bold">
         <div className="hero-body">
           <div className="container">
@@ -37,3 +37,5 @@ export default ({ data: { tags, posts }, pageContext: { tag } }) => {
     </Fragment>
   );
 };
+
+export default Blog;

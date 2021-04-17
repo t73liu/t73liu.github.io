@@ -1,14 +1,15 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { graphql } from "gatsby";
-import Img from "gatsby-image";
-import SEO from "../components/seo";
+import { GatsbyImage } from "gatsby-plugin-image";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 import ExternalLink from "../components/external-link";
 import BlogPreview from "../components/blog-preview";
 import ProjectPreview from "../components/project-preview";
 
-export default ({ data: { posts, projects, profileImage } }) => (
-  <Fragment>
-    <SEO title="Home" />
+const Home = ({ data: { posts, projects, profileImage } }) => (
+  <Layout>
+    <Seo title="Home" />
     <section className="hero is-primary is-bold">
       <div className="hero-body">
         <div className="container">
@@ -21,7 +22,10 @@ export default ({ data: { posts, projects, profileImage } }) => (
         <div className="column is-one-quarter">
           <div className="card">
             <div className="card-image">
-              <Img fluid={profileImage.childImageSharp.fluid} alt="Profile" />
+              <GatsbyImage
+                image={profileImage.childImageSharp.gatsbyImageData}
+                alt="Profile"
+              />
             </div>
             <div className="card-content">
               <p className="title is-4">Tao Liu</p>
@@ -37,6 +41,7 @@ export default ({ data: { posts, projects, profileImage } }) => (
                 Software engineer looking for interesting problems
                 <ul>
                   <li>Clojure</li>
+                  <li>Go</li>
                   <li>Java</li>
                   <li>JavaScript</li>
                   <li>React</li>
@@ -81,7 +86,7 @@ export default ({ data: { posts, projects, profileImage } }) => (
         </div>
       </div>
     </div>
-  </Fragment>
+  </Layout>
 );
 
 export const query = graphql`
@@ -121,9 +126,12 @@ export const query = graphql`
           demo
           image {
             childImageSharp {
-              fluid(maxWidth: 500, maxHeight: 500, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(
+                layout: CONSTRAINED
+                width: 500
+                height: 500
+                quality: 100
+              )
             }
           }
         }
@@ -134,11 +142,16 @@ export const query = graphql`
     }
     profileImage: file(relativePath: { eq: "images/profile.jpg" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        fluid(maxWidth: 500, maxHeight: 500, quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        gatsbyImageData(
+          layout: CONSTRAINED
+          width: 500
+          height: 500
+          quality: 100
+          transformOptions: { fit: COVER, cropFocus: ENTROPY }
+        )
       }
     }
   }
 `;
+
+export default Home;

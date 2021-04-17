@@ -56,7 +56,7 @@ the main screen after TensorFlow.js has finished loading. `AppLoading` is an Exp
 component that will show the application's splash screen while the app is waiting
 for resources to be prepared.
 
-```javascript
+```js
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 import { AppLoading } from "expo";
@@ -111,7 +111,7 @@ Now that we can create the component to handle the prediction logic.
    matrix).
 1. Finally the model uses tensors as inputs and outputs an array of predictions.
 
-```javascript
+```js
 import React, { Component } from "react";
 import { Text } from "react-native";
 import * as tf from "@tensorflow/tfjs";
@@ -160,7 +160,7 @@ the alpha channel since MobileNet does not support/use that dimension.
     yarn add jpeg-js
 ```
 
-```javascript
+```js
 import * as tf from "@tensorflow/tfjs";
 import { decode as jpegDecode } from "jpeg-js";
 export function removeAlphaChannel(width, height, data) {
@@ -184,7 +184,7 @@ Finally, we are ready to make predictions using the MobileNet. Replace the
 placeholder text in `App.js` with our MobileNet component. The image that
 was added to `assets` folder earlier will now be processed!
 
-```javascript
+```js
 <MobileNet source={require("./assets/sample.jpg")} />
 ```
 

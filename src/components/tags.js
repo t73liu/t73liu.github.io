@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-export default ({ baseUrl = "", tags, tag }) => (
+const Tags = ({ baseUrl = "", tags, tag }) => (
   <div className="card">
     <header className="card-header no-box-shadow">
       <div className="card-header-content">
@@ -28,3 +28,5 @@ export default ({ baseUrl = "", tags, tag }) => (
     </div>
   </div>
 );
+
+export default Tags;

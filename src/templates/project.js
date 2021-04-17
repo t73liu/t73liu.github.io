@@ -1,13 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { graphql, Link } from "gatsby";
-import SEO from "../components/seo";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 import ExternalLink from "../components/external-link";
 
-export default ({ data }) => {
+const ProjectPage = ({ data }) => {
   const { title, source, demo, tags } = data.markdownRemark.frontmatter;
   return (
-    <Fragment>
-      <SEO title={title} />
+    <Layout>
+      <Seo title={title} />
       <section className="hero is-primary is-bold">
         <div className="hero-body">
           <div className="container">
@@ -51,7 +52,7 @@ export default ({ data }) => {
           </div>
         </div>
       </div>
-    </Fragment>
+    </Layout>
   );
 };
 
@@ -68,3 +69,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default ProjectPage;

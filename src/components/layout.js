@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import ExternalLink from "./external-link";
 
-export default ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <div>
       <nav
@@ -37,3 +37,5 @@ export default ({ children }) => {
     </div>
   );
 };
+
+export default Layout;

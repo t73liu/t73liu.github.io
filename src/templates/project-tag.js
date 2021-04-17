@@ -1,7 +1,13 @@
+import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../components/layout";
 import Projects from "../components/projects";
 
-export default Projects;
+const ProjectTagPage = (props) => (
+  <Layout>
+    <Projects {...props} />
+  </Layout>
+);
 
 export const query = graphql`
   query($tag: [String]) {
@@ -44,3 +50,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default ProjectTagPage;

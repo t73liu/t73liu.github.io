@@ -17,12 +17,7 @@ module.exports = {
         path: `${__dirname}/content/`,
       },
     },
-    {
-      resolve: "gatsby-plugin-layout",
-      options: {
-        component: require.resolve("./src/components/layout.js"),
-      },
-    },
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

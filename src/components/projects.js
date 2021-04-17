@@ -1,13 +1,13 @@
 import React, { Fragment } from "react";
 import { chunk } from "lodash";
-import SEO from "./seo";
+import Seo from "./seo";
 import ProjectPreview from "./project-preview";
 import Tags from "./tags";
 
-export default ({ data: { tags, projects }, pageContext: { tag } }) => {
+const Projects = ({ data: { tags, projects }, pageContext: { tag } }) => {
   return (
     <Fragment>
-      <SEO title={tag ? `Projects | ${tag}` : "Projects"} />
+      <Seo title={tag ? `Projects | ${tag}` : "Projects"} />
       <section className="hero is-primary is-bold">
         <div className="hero-body">
           <div className="container">
@@ -38,3 +38,5 @@ export default ({ data: { tags, projects }, pageContext: { tag } }) => {
     </Fragment>
   );
 };
+
+export default Projects;

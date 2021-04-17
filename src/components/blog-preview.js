@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-export default ({
+const BlogPreview = ({
   fields: { slug },
   frontmatter: { title, date },
   excerpt,
@@ -25,3 +25,5 @@ export default ({
     </div>
   </div>
 );
+
+export default BlogPreview;

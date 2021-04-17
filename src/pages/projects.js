@@ -1,7 +1,13 @@
+import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../components/layout";
 import Projects from "../components/projects";
 
-export default Projects;
+const ProjectsPage = (props) => (
+  <Layout>
+    <Projects {...props} />
+  </Layout>
+);
 
 export const query = graphql`
   query {
@@ -41,3 +47,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default ProjectsPage;
