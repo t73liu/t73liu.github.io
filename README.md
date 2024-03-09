@@ -1,10 +1,22 @@
 # [About Me](https://t73liu.github.io/)
 
-This is a site for my side projects and blog. The site is built using GatsbyJS,
-React, and GraphQL.
+This project is a portfolio site and blog. The site is built using
+[Astro](https://astro.build/) and [SolidJS](https://www.solidjs.com/).
 
-If you want similar functionality for your own site, you can clone the repo and
-populate it with your own posts/projects.
+## Development
+
+```sh
+# Install dependencies.
+pnpm install
+# Upgrade Astro dependencies.
+pnpm dlx @astrojs/upgrade
+# Starts local dev server.
+pnpm start
+# Build your production site to ./dist/.
+pnpm build
+# Preview your build locally.
+pnpm preview
+```
 
 ## License
 
