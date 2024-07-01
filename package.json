@@ -8,29 +8,37 @@
   "scripts": {
     "start": "astro dev",
     "build": "astro check && astro build",
-    "deploy": "astro check && astro build && gh-pages -d public -b master",
-    "format": "prettier --write **/*.{json,js,mjs,ts,tsx,md,mdx}",
+    "deploy": "pnpm run build && gh-pages -d dist -b master",
+    "format": "prettier --write **/*.{astro,css,json,mjs,ts,tsx,md,mdx}",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.10",
-    "@astrojs/mdx": "^2.2.4",
-    "@astrojs/partytown": "^2.0.4",
-    "@astrojs/rss": "^4.0.5",
-    "@astrojs/sitemap": "^3.1.2",
-    "@astrojs/solid-js": "^4.0.1",
+    "@astrojs/check": "^0.8.1",
+    "@astrojs/mdx": "^3.1.2",
+    "@astrojs/partytown": "^2.1.1",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "~4.5.18",
+    "@fontsource/geist-mono": "^5.0.3",
+    "@fontsource/geist-sans": "^5.0.3",
+    "@tailwindcss/typography": "^0.5.13",
+    "@types/markdown-it": "^14.1.1",
+    "@types/sanitize-html": "^2.11.0",
+    "astro": "^4.11.5",
     "astro-robots-txt": "^1.0.0",
-    "daisyui": "^4.10.1",
-    "solid-js": "^1.8.16",
-    "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.5"
+    "clsx": "^2.1.1",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.13.0",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
-    "prettier": "3.2.5",
-    "prettier-plugin-astro": "^0.13.0"
+    "prettier": "3.3.3",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "prettier-plugin-tailwindcss": "^0.6.5"
   }
 }
