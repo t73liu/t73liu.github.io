@@ -8,7 +8,7 @@
   "scripts": {
     "start": "astro dev",
     "build": "astro check && astro build",
-    "deploy": "pnpm run build && gh-pages -d dist -b master",
+    "deploy": "astro check && astro build && gh-pages -d dist -b publish",
     "format": "prettier --write **/*.{astro,css,json,mjs,ts,tsx,md,mdx}",
     "preview": "astro preview",
     "astro": "astro"
