@@ -16,8 +16,6 @@ pnpm start
 pnpm build
 # Preview your build locally.
 pnpm preview
-# Deploy to GitHub pages.
-pnpm run deploy
 ```
 
 ## License

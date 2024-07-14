@@ -8,9 +8,8 @@
   "scripts": {
     "start": "astro dev",
     "build": "astro check && astro build",
-    "deploy": "astro check && astro build && gh-pages -d dist -b publish",
     "format": "prettier --write **/*.{astro,css,json,mjs,ts,tsx,md,mdx}",
-    "preview": "astro preview",
+    "preview": "pnpm run build && astro preview",
     "astro": "astro"
   },
   "dependencies": {
@@ -36,7 +35,6 @@
     "typescript": "^5.5.3"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
     "prettier": "3.3.3",
     "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-organize-imports": "^4.0.0",

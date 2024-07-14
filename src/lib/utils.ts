@@ -25,7 +25,9 @@ export function readingTime(html: string) {
 
 const md = new markdownit();
 
-export function getDescription(post: CollectionEntry<"blog"> | CollectionEntry<"projects">) {
+export function getDescription(
+  post: CollectionEntry<"blog"> | CollectionEntry<"projects">
+) {
   if (post.data.description) {
     return post.data.description;
   }
