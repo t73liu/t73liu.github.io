@@ -1,9 +1,9 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import Container from "@components/Container.astro";
+import { type CollectionEntry, getCollection } from "astro:content";
 import ArrowCard from "@components/ArrowCard.astro";
+import Container from "@components/Container.astro";
 import { PROJECTS } from "@consts";
+import Layout from "@layouts/Layout.astro";
 
 type Project = CollectionEntry<"projects">;
 

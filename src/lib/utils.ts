@@ -1,5 +1,5 @@
 import type { CollectionEntry } from "astro:content";
-import { clsx, type ClassValue } from "clsx";
+import { type ClassValue, clsx } from "clsx";
 import markdownit from "markdown-it";
 import sanitizeHtml from "sanitize-html";
 import { twMerge } from "tailwind-merge";
@@ -31,7 +31,7 @@ export function getDescription(
   if (post.data.description) {
     return post.data.description;
   }
-  const html = md.render(post.body);
+  const html = md.render(post.body || "");
   const sanitized = sanitizeHtml(html, { allowedTags: [] });
   return sanitized.slice(0, 100);
 }
