@@ -1,6 +1,0 @@
-.astro/
-.cache/
-.vscode/
-node_modules/
-public/
-dist/

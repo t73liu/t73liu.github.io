@@ -1,0 +1,8 @@
+{
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "tailwind": {
+    "stylesheet": "./src/styles/global.css"
+  }
+}

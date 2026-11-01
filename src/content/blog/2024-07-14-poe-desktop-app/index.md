@@ -1,4 +1,5 @@
 ---
+
 title: "Python Desktop App for PoE"
 pubDate: "2024-07-14"
 slug: poe-desktop-app

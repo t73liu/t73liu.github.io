@@ -6,12 +6,7 @@ import { defineConfig } from "astro/config";
 
 export default defineConfig({
   site: "https://t73liu.github.io",
-  integrations: [
-    mdx(),
-    sitemap(),
-    robotsTxt(),
-    tailwind(),
-  ],
+  integrations: [mdx(), sitemap(), robotsTxt(), tailwind()],
   markdown: {
     shikiConfig: {
       theme: "css-variables",

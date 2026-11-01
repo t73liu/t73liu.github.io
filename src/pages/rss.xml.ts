@@ -11,7 +11,7 @@ export async function GET(context: Context) {
     .filter((post) => !post.data.draft)
     .sort(
       (a, b) =>
-        new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+        new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
     );
 
   return rss({
@@ -22,7 +22,7 @@ export async function GET(context: Context) {
       title: item.data.title,
       description: item.data.description,
       pubDate: item.data.pubDate,
-      link: `/${item.collection}/${item.slug}/`,
+      link: `/${item.collection}/${item.id}/`,
     })),
   });
 }
